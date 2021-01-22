@@ -52,9 +52,9 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
     }
 
-//    @Bean
-//    public ViewResolver internalResourceViewResolver(){
-//        InternalResourceViewResolver resolver = new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
-//        return resolver;
-//    }
+    @Bean
+    public ViewResolver internalResourceViewResolver(){
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
+        return resolver;
+    }
 }
